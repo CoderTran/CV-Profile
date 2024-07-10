@@ -7,82 +7,101 @@
     <title>My profile</title>
 </head>
 <body>
-    
     <header>
         <div class="image-container">
             <img src="./asset/image/avatar.png" alt="" class="img avatar"/>
         </div>
         <div class="title-container">
-            <h1>
-                TRẦN QUỐC HIỆU
-            </h1>
-            <h2>
-                IT COMMUNICATOR
-            </h2>
+            <h1>TRẦN QUỐC HIỆU</h1>
+            <h2>IT COMMUNICATOR</h2>
+        </div>
+        <div class="language-switch">
+            <label for="lang-select">Ngôn ngữ:</label>
+            <select id="lang-select" onchange="changeLanguage(this.value)">
+                <option value="vi">Tiếng Việt</option>
+                <option value="ja">日本語 (Tiếng Nhật)</option>
+            </select>
         </div>
     </header>
     <div class="container">
         <div class="sider">
-            <div class="sider-content">
-                <h1 class="tag-fill">LIÊN HỆ</h1>
-                <div class="tag-content">
+            <!-- Nội dung tiếng Việt -->
+            <div class="vietnamese">
+                <div class="sider-content">
+                    <h1 class="tag-fill">Học vấn </h1>
+                    <div class="tag-content">
+                        <h3>Trường đại học Shumei University</h3>
+                        <ul>
+                            <li>英語情報マネジメント学部、ITコース、GPA 3.69</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sider-content">
+                    <h1 class="tag-fill">Chứng chỉ</h1>
+                    <div class="tag-content">
+                        <ul class="list-content">
+                            <li>Tiếng Nhật N2</li>
+                            <li>インターネット検定 ドットコムマスター BASIC</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sider-content">
+                    <h1 class="tag-fill">Hoạt động ngoại khóa</h1>
+                    <h3>Tham gia Lễ Hội tại trường đại học</h3>
                     <ul>
-                        <li>Item</li>
-                        <li>Item</li>
-                        <li>Item</li>
-                        <li>Item</li>
-                        <li>Item</li>
-                    </ul> 
-                </div> 
-            </div>
-            <div class="sider-content">
-                <h1 class="tag-fill">KỸ NĂNG</h1>
-                <div class="tag-content" style="width: 90%;">
-                    <p class="progress-title">Tiếng Nhật</p>
-                    <div class="progress-wrap">
-                        <div 
-                    class="progress" 
-                    style="width:80%">
-                    </div>
-                    </div>
-                    <p class="progress-title">Tiếng Nhật</p>
-                    <div class="progress-wrap">
-                        <div 
-                    class="progress" 
-                    style="width:30%">
-                    </div>
-                    </div>
-                    <p class="progress-title">Tiếng Nhật</p>
-                    <div class="progress-wrap">
-                        <div 
-                    class="progress" 
-                    style="width:60% ">
-                    </div>
-                    </div>                                              
+                        <li>Thiết kế giao diện phần mềm, thiết kế poster để trưng bày tại lễ hội.</li>
+                        <li>Giới thiệu cho mọi người biết được các công đoạn để có thể thiết kế lên được giao diện đơn bằng các công cụ như React-JS, HTML, CSS </li>
+                        <li>Qua đó nâng cao được khả năng truyền đạt thông tin cũng như là giao tiếp cho bản thân.</li>
+                    </ul>
                 </div>
             </div>
-            <div class="sider-content">
-            <h1 class="tag-fill">CHỨNG CHỈ</h1>
-            <div class="tag-content">
-                <p class="text-content">Hôm nay mình có quay một video trong khóa học ReactJS là "Tạo dự án ReactJS</p>    
-                 <ul class="list-content">
-                    <li>Item</li>
-                    <li>Item</li>
-                </ul>  
-            </div>
-            
+            <!-- Nội dung tiếng Nhật -->
+            <div class="japanese">
+                <div class="sider-content">
+                    <h1 class="tag-fill">学歴</h1>
+                    <div class="tag-content">
+                        <h3>Shumei大学</h3>
+                        <ul>
+                            <li>英語情報マネジメント学部、ITコース、GPA 3.69</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sider-content">
+                    <h1 class="tag-fill">資格</h1>
+                    <div class="tag-content">
+                        <ul class="list-content">
+                            <li>日本語 N2</li>
+                            <li>インターネット検定 ドットコムマスター BASIC</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sider-content">
+                    <h1 class="tag-fill">課外活動</h1>
+                    <h3>大学祭の参加</h3>
+                    <ul>
+                        <li>ソフトウェアのUIデザイン、ポスターのデザインを行いました。</li>
+                        <li>React-JS、HTML、CSSなどのツールを使ってUIデザインのプロセスを紹介しました。</li>
+                        <li>この経験を通じて、情報伝達能力とコミュニケーション能力を向上させました。</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="content">
-            <div>
-                <h1 class="tag">Giới thiệu</h1>
-                <p class="text-content">
-                    Hôm nay mình có quay một video trong khóa học ReactJS là "Tạo dự án ReactJS với Webpack và Babel". 
-                    Mình làm video này với mong muốn chia sẻ cho các bạn có thể hình dung ra dự án được tạo bởi 
-                    "create-react-app" được xây dựng như thế nào. Các bạn có thể xem thêm video hướng dẫn ở đây nhé.
-                </p>
+            <div class="content-top vietnamese">
+                <h1 class="tag">Mục tiêu nghề nghiệp</h1>
+                <ul class="text-content">
+                    <li>Mục tiêu ngắn hạn: Trờ thành IT communicator</li>
+                    <li>Mục tiêu dài hạn: Trau dồi thêm kiến thức, kỹ năng để có thể trở thành kỹ sư cầu nối(BrSE)</li>
+                </ul>
             </div>
-            <div>
+            <div class="content-top japanese">
+                <h1 class="tag">キャリア目標</h1>
+                <ul class="text-content">
+                    <li>短期目標: ITコミュニケーターになること</li>
+                    <li>長期目標: 知識とスキルを磨いてブリッジSEになること</li>
+                </ul>
+            </div>
+            <div class="vietnamese">
                 <h1 class="tag">Kinh nghiệm làm việc</h1>
                 <ul>
                     <li>
@@ -98,8 +117,6 @@
                             <li>Hiệu đẹp trai</li>
                             <li>Hiệu đẹp trai</li>
                         </ul>
-
-                        
                     </li>
                     <li>
                         <div class="tabbar-title">
@@ -117,8 +134,71 @@
                     </li>
                 </ul>
             </div>
+            <div class="japanese">
+                <h1 class="tag">職務経験</h1>
+                <ul>
+                    <li>
+                        <div class="tabbar-title">
+                            <p class="text-content">履歴書を書く</p>
+                            <p class="text-date">2017年3月 - 2018年3月</p>
+                        </div>
+                        <h3>プロダクトマネージャー</h3>
+                        <p class="text-content">方向性の情報提供</p>
+                        <ul>
+                            <li>Hiệu đẹp trai</li>
+                            <li>Hiệu đẹp trai</li>
+                            <li>Hiệu đẹp trai</li>
+                            <li>Hiệu đẹp trai</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="tabbar-title">
+                            <p class="text-content">履歴書を書く</p>
+                            <p class="text-date">2017年3月 - 2018年3月</p>
+                        </div>
+                        <h3>プロダクトマネージャー</h3>
+                        <p class="text-content">方向性の情報提供</p>
+                        <ul>
+                            <li>Hiệu đẹp trai</li>
+                            <li>Hiệu đẹp trai</li>
+                            <li>Hiệu đẹp trai</li>
+                            <li>Hiệu đẹp trai</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-    
+    <script>
+        function changeLanguage(lang) {
+            var vietnameseElements = document.querySelectorAll('.vietnamese');
+            var japaneseElements = document.querySelectorAll('.japanese');
+
+            if (lang === 'vi') {
+                showElements(vietnameseElements);
+                hideElements(japaneseElements);
+            } else if (lang === 'ja') {
+                showElements(japaneseElements);
+                hideElements(vietnameseElements);
+            }
+        }
+
+        function showElements(elements) {
+            elements.forEach(function(element) {
+                element.style.display = 'block';
+            });
+        }
+
+        function hideElements(elements) {
+            elements.forEach(function(element) {
+                element.style.display = 'none';
+            });
+        }
+
+        // Set initial language to Vietnamese
+        window.onload = function() {
+            changeLanguage('vi');
+        }
+    </script>
 </body>
 </html>

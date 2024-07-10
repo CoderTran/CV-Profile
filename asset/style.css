@@ -1,80 +1,104 @@
-body{
+body {
     margin: 0px;
     background-color: #e4e4e4;
 }
-*{
-    font-family:'Times New Roman', Times, serif;
+
+* {
+    font-family: 'Times New Roman', Times, serif;
     margin: 0;
 }
-header{
+
+header {
     padding: 20px 20px 20px 0px;
     margin-bottom: 10px;
     background-color: #38b6ff;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.text-content{
+
+.text-content {
     padding: 0px 10px;
     margin-bottom: 10px;
     text-align: justify;
 }
-.image-container{
+
+.image-container {
     background-color: white;
     padding: 5px;
     padding-left: 10px;
     border-top-right-radius: 100px;
     border-bottom-right-radius: 100px;
 }
-.img{
+
+.img {
     width: 100px;
     height: 100px;
     object-fit: fill;
     border-radius: 100px;
     margin-bottom: 10px;
 }
-.title-container{
+
+.title-container {
     padding: 0 20px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     color: white;
-    
-
 }
-.title-container h1, .title-container h2{
+
+.title-container h1,
+.title-container h2 {
     color: white;
     font-size: 32px;
     text-transform: uppercase;
-    
 }
-.title-container h2{
+
+.title-container h2 {
     font-size: 22px;
     font-weight: 600;
     color: rgba(240, 240, 240, 0.904);
     margin-top: 10px;
 }
-/*container*/
-.container{
+
+/* Language Switch */
+.language-switch {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.language-switch select {
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+/* container */
+.container {
     background-color: #e4e4e4;
     padding: 10px;
     display: flex;
 }
-.sider, .content{
+
+.sider,
+.content {
     background-color: white;
     padding: 20px 0;
     width: 100%;
 }
-.sider{
-    width: calc(40% - 20px); 
+
+.sider {
+    width: calc(40% - 20px);
     margin-right: 10px;
 }
 
-.content{
+.content {
     flex-grow: 1;
     padding: 15px;
-
 }
 
-.tag-fill{
+.tag-fill {
     color: white;
     font-size: 30px;
     font-weight: 800;
@@ -85,62 +109,76 @@ header{
     text-align: left;
     display: inline-block;
 }
-.tag-content{
+
+.tag-content {
     padding-left: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.tag-content ul{
+.tag-content ul {
     margin: 0px;
     padding: 0px;
 }
-.tag-content ul li{
-    list-style-type: none;
+
+.tag-content ul li {
+    list-style-type: decimal;
     padding: 8px 0;
 }
-.progress-title{
+
+.progress-title {
     text-transform: uppercase;
     font-size: 0.8rem;
     margin: 0;
     padding: 0;
 }
-.progress-wrap{
+
+.progress-wrap {
     width: 100%;
     height: 10px;
     background-color: rgb(168, 168, 168);
     margin-top: 10px;
     margin-bottom: 15px;
-
 }
-.progress{
+
+.progress {
     width: 50%;
     height: 10px;
     background-color: rgb(241, 0, 0);
 }
-.list-content{
-    padding:0;
+
+.list-content {
+    padding: 0;
 }
-.list-content li{
+
+.list-content li {
     list-style-type: square !important;
 }
-.tag{
+
+.tag {
     font-size: 30px;
     color: #000000;
-    padding-left:18px ;
+    padding-left: 18px;
     border-left: 10px solid #38b6ff;
-    margin-bottom:  20px;
+    margin-bottom: 20px;
 }
 
-.tabbar-title{
+.tabbar-title {
     display: flex;
     justify-content: space-between;
+    padding: 20px;
 }
 
-.content ul li{
-    list-style-type: none ;
+.content ul li {
+    list-style-type: circle;
+    font-size: 22px;
 }
-.text-date{
+
+.text-date {
     padding: 0 20px;
     color: #62bef3;
+}
+
+.content-top {
+    margin-bottom: 20px;
 }
