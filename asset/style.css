@@ -51,7 +51,7 @@ header {
 .title-container h1,
 .title-container h2 {
     color: white;
-    font-size: 32px;
+    font-size: 25px;
     text-transform: uppercase;
 }
 
@@ -72,7 +72,7 @@ header {
 .language-switch select {
     margin-left: 10px;
     padding: 5px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 /* container */
@@ -90,7 +90,7 @@ header {
 }
 
 .sider {
-    width: calc(40% - 20px);
+    width: calc(65% - 20px);
     margin-right: 10px;
 }
 
@@ -101,7 +101,7 @@ header {
 
 .tag-fill {
     color: white;
-    font-size: 25px;
+    font-size: 17px;
     font-weight: 800;
     background-color: #38b6ff;
     border-top-right-radius: 100px;
@@ -115,6 +115,7 @@ header {
     padding-left: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
+   
 }
 
 .tag-content ul {
@@ -123,7 +124,7 @@ header {
 }
 
 .tag-content ul li {
-  
+    
     padding: 8px 0;
 }
 
@@ -154,11 +155,11 @@ header {
 
 .list-content li {
     list-style-type: square !important;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .tag {
-    font-size: 25px;
+    font-size: 17px;
     color: #000000;
     padding-left: 18px;
     border-left: 10px solid #38b6ff;
@@ -173,7 +174,7 @@ header {
 
 .content ul li {
     list-style-type: circle;
-    font-size: 22px;
+    font-size: 15px;
 }
 
 .text-date {
