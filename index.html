@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./asset/style.css">
     <title>My profile</title>
     <script src="./Label.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
 </head>
 <body>
     <header>
@@ -24,6 +25,7 @@
             </select>
         </div>
     </header>
+    <button onclick="exportToPDF()">Xuất PDF</button>
     <div class="container">
         <div class="sider">
             <!-- Nội dung tiếng Việt -->
@@ -208,5 +210,24 @@
             </div>
         </div>
     </div>  
+    <script>
+        function exportToPDF() {
+            const { jsPDF } = window.jspdf;
+
+            // Tạo một đối tượng jsPDF
+            const doc = new jsPDF();
+
+            // Lấy nội dung từ trang web
+            const content = document.querySelector('body').innerHTML;
+
+            // Thêm nội dung vào file PDF
+            doc.fromHTML(content, 15, 15, {
+                'width': 170,
+            });
+
+            // Lưu file PDF với tên "profile.pdf"
+            doc.save('profile.pdf');
+        }
+    </script>
 </body>
 </html>

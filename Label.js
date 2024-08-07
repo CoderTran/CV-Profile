@@ -7,7 +7,7 @@
                 showElements(vietnameseElements);
                 hideElements(japaneseElements);
             } else if (lang === 'ja') {
-                showElements(japaneseElements);
+                showElements(japanesseElements);
                 hideElements(vietnameseElements);
             }
         }
@@ -28,4 +28,7 @@
         window.onload = function() {
             changeLanguage('vi');
         }
+    
+        
+   
  
